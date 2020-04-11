@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+html{
+    background-color:#141414;
+}
+
+.img-logo{
+    width: 90px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+/*align-items moves all the items in the flex container to the center, this includes heading, pictures and manage profile button*/
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
+   
+}
+.netflix-header{
+    color: #ffffff;
+    font-size: 25px;
+    
+}
+.user-profiles{
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap; 
+    justify-content: space-between;
+      
+}
+/*This adjusts the items and give them space between them, n/b .profile-pic is inside the container for .user-profiles where flex is applied*/
+/* .profile-pic{
+    width: 50px;
+    
+}
+.profile-pic>img{
+   width: 100px;
+  
+} */
+.pic-block{
+    width: 120px;
+}
+.pic-block>p{
+    color: #ffffff;
+    width: 100px;
+    margin-left: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.pic-block>img{
+    width: 100px;
+    transition: all 0.1s linear;
+    cursor: pointer;
+    
+} 
+.pic-block>img:hover{
+    border: solid #ffffff;
+}
+.pic-block>p:hover{
+   transition: all 0.1s linear;
+   color: #ffffff;
+}
+.profile-manage>button{
+    color: darkgrey;
+    background-color: #141414;
+    padding: 20px;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+.profile-manage>button:hover{
+   color: beige;
+   background-color: #141414;
+   padding: 20px;
+   border: solid #ffffff;
+   
+}
